@@ -124,22 +124,11 @@ namespace GIBS.Modules.FlexMLS_Favorites
         {
             try
             {
-             
-                var modules = new ModuleController();
 
-                modules.UpdateModuleSetting(ModuleId, "FlexMLSModuleID", ddlFlexMLSModule.SelectedValue.ToString());
-                modules.UpdateModuleSetting(ModuleId, "FlexMLSModulePage", ddlFlexMLSModulePage.SelectedValue.ToString());
-                modules.UpdateModuleSetting(ModuleId, "MLSImagesURL", txtMLSImagesUrl.Text.ToString());
+                FlexMLSModuleID = ddlFlexMLSModule.SelectedValue.ToString();
+                FlexMLSModulePage = ddlFlexMLSModulePage.SelectedValue.ToString();
+                MLSImagesURL = txtMLSImagesUrl.Text.ToString();
 
-
-                //the following are two sample Module Settings, using the text boxes that are commented out in the ASCX file.
-                //module settings
-                //modules.UpdateModuleSetting(ModuleId, "Setting1", txtSetting1.Text);
-                //modules.UpdateModuleSetting(ModuleId, "Setting2", txtSetting2.Text);
-
-                //tab module settings
-                //modules.UpdateTabModuleSetting(TabModuleId, "Setting1",  txtSetting1.Text);
-                //modules.UpdateTabModuleSetting(TabModuleId, "Setting2",  txtSetting2.Text);
 
             }
             catch (Exception ex)

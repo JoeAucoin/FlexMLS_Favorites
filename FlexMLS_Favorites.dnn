@@ -1,5 +1,5 @@
 ﻿<dotnetnuke type="Package" version="5.0">
-  <packages><package name="GIBS.FlexMLS_Favorites" type="Module" version="1.0.10">
+  <packages><package name="GIBS.FlexMLS_Favorites" type="Module" version="1.0.11">
   <friendlyName>GIBS - FlexMLS - Favorites</friendlyName>
   <description>GIBS - FlexMLS - Favorites</description>
   <iconFile />
@@ -27,7 +27,7 @@
         </script>
         <script type="UnInstall">
           <name>Uninstall.SqlDataProvider</name>
-          <version>1.0.10</version>
+          <version>1.0.11</version>
         </script>
       </scripts>
     </component>
